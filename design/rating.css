@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-size: 15px;
+}
+
 body{
     background-color:hsl(213, 19%, 18%);
     color: white;
@@ -7,6 +13,15 @@ body{
     position: absolute;
     left: 30%;
     top: 20%;
+
+    padding: 2em;
+    border-radius: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    gap: 2em;
 }
 
 html{
@@ -15,4 +30,36 @@ html{
 
 #submitedPage{
     display: none;
+}
+
+#mainTitle{
+font-size: 1.7em;
+}
+
+.description{
+    /* width: 40ch; */
+   line-height: 1.7em;
+}
+
+
+#rating{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#rating>button{
+    background-color:hsla(0, 0%, 49%, 0.311);
+    border-radius: 3rem;
+    width: 3em;
+    height: 3em;
+    color:white;
+    border: 0px;
+}
+
+#submit{
+background-color: hsl(25, 97%, 53%);
+color: white;
+padding:0.75em ;
+border-radius: 2em;
 }
