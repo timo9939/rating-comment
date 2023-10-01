@@ -17,6 +17,10 @@ body{
     padding: 2em;
     border-radius: 1em;
 
+
+}
+
+#mainPage{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
