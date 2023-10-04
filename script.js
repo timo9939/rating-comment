@@ -1,4 +1,7 @@
-let submitedBtn=document.getElementById("submit")
+let submitedBtn=document.getElementById("submit");
+let score=document.getElementById("rating").value
+
+
 submitedBtn.addEventListener("click",submitRate )
 
 function submitRate(){
@@ -7,5 +10,8 @@ function submitRate(){
 console.log("Button Clicked");
 document.getElementById("submitedPage").style.display="block"
 }
+
+
+score
 
 console.log("js work")
