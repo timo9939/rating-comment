@@ -1,5 +1,6 @@
 let submitedBtn = document.getElementById("submit");
 let score = document.getElementById("ratingSpan")
+let newPage=document.getElementById("submitedPage")
 
 const btn1 = document.getElementById("1")
 const btn2 = document.getElementById("2")
@@ -24,13 +25,17 @@ function submitRate() {
 
     document.getElementById("mainPage").style.display = "none";
     console.log("Button Clicked");
-    document.getElementById("submitedPage").style.display = "block"
 
+newPage.classList.add("submitedPageClass")
+    document.getElementById("submitedPage").classList.remove("disappear")
+    // document.append(newPage)
 
     console.log("rateSelect is ", rateSelect)
     console.log("rateSelect Data Type is ", typeof (rateSelect))
     score.innerHTML = rateSelect
 
+
+    
 }
 
 

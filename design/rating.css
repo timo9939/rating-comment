@@ -1,86 +1,120 @@
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    font-size: 15px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 15px;
 }
 
-body{
-    background-color:hsl(213, 19%, 18%);
-    color: white;
-    width: 40vw;
-    height: 50vh;
+body {
+  background-color: hsl(213, 19%, 18%);
+  color: white;
+  width: 40vw;
+  height: 50vh;
 
-    position: absolute;
-    left: 30%;
-    top: 20%;
+  position: absolute;
+  left: 30%;
+  top: 20%;
 
-    padding: 2em;
+  padding: 2em;
+  border-radius: 1em;
+}
+
+#mainPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  gap: 2em;
+}
+
+html {
+  background-color: black;
+}
+
+
+
+#mainTitle {
+  font-size: 1.7em;
+}
+
+.description {
+  /* width: 40ch; */
+  line-height: 1.7em;
+}
+
+#rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#rating > button {
+  background-color: hsla(0, 0%, 49%, 0.311);
+  border-radius: 3rem;
+  width: 3em;
+  height: 3em;
+  color: white;
+  border: 0px;
+}
+
+#rating > button:hover {
+  background-color: hsl(0, 0%, 49%);
+}
+
+#rating > button:focus-within {
+  background-color: orange;
+}
+
+#submit {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  padding: 0.75em;
+  border-radius: 2em;
+}
+
+#submit:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+
+/* Submited Page */
+
+#submitedPage h2 {
+  color: orange;
+}
+
+.submitedPageClass {
+
+  display: grid;
+grid-template-rows: repeat(6,2.5em);
+grid-gap: 1em 1em;
+
+justify-items: center;
+align-content: center;
+}
+
+.submitedPageClass img{
+    grid-row: 1/3;
+    height:15vh;
+padding-bottom: 1em;
+}
+
+.submitedPageClass h2{
+    background-color: rgba(164, 164, 164, 0.676);
+    padding: 0.3em 3em;
     border-radius: 1em;
-
-
+   
 }
 
-#mainPage{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
-    gap: 2em;
+.submitedPageClass h1{
+    font-size: 2em;
 }
 
-html{
-    background-color: black;
+.submitedPageClass p{
+    padding-top: 1em;
+    width: 60ch;
+    color: rgba(240, 248, 255, 0.568);
 }
 
-#submitedPage{
-    display: none;
-}
-
-#mainTitle{
-font-size: 1.7em;
-}
-
-.description{
-    /* width: 40ch; */
-   line-height: 1.7em;
-}
-
-
-#rating{
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-#rating>button{
-    background-color:hsla(0, 0%, 49%, 0.311);
-    border-radius: 3rem;
-    width: 3em;
-    height: 3em;
-    color:white;
-    border: 0px;
-}
-
-#rating>button:hover{
-background-color: hsl(0, 0%, 49%);
-}
-
-#rating>button:focus-within{
-background-color: orange;
-}
-
-#submit{
-background-color: hsl(25, 97%, 53%);
-color: white;
-padding:0.75em ;
-border-radius: 2em;
-}
-
-#submit:hover{
-    background-color: white;
-color:  hsl(25, 97%, 53%);
-}
-
-#submitedPage h2{
-    color: orange;
+.disappear {
+  display: none;
 }
